@@ -1,0 +1,37 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; background: #f2f6fc; color: #1a2a40; }
+.capcalera { background: #12284a; color: #fff; padding: 14px 20px; border-bottom: 3px solid #f28c28; }
+.capcalera .dreta { float: right; font-size: 14px; }
+.contenidor { max-width: 900px; margin: 0 auto; padding: 20px; }
+a { color: #12284a; }
+.hero { background: #1a3a66; color: #fff; padding: 24px; border-radius: 12px; margin-bottom: 16px; }
+.hero h1 { margin: 0 0 8px; }
+.resum { display: flex; gap: 12px; margin-bottom: 20px; }
+.caixa { flex: 1; background: #fff; padding: 16px; border-radius: 10px; display: flex; justify-content: space-between; }
+.caixa strong { font-size: 24px; }
+.llistat { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.targeta { background: #fff; border-top: 4px solid #12284a; border-radius: 10px; padding: 16px; }
+.fila { display: flex; justify-content: space-between; align-items: center; gap: 8px; }
+.etiquetes { color: #1a3a66; font-size: 13px; }
+.estat { padding: 3px 10px; border-radius: 20px; font-size: 12px; font-weight: bold; }
+.estat--pendent { background: #fff3c4; color: #7a5b00; }
+.estat--proces { background: #dbeafe; color: #1e4e9c; }
+.estat--acabat { background: #d5f5e3; color: #1d7a45; }
+.boto { display: inline-block; padding: 8px 14px; border: 0; border-radius: 6px; background: #12284a; color: #fff; text-decoration: none; font-weight: bold; cursor: pointer; font-size: 14px; }
+.boto.groc { background: #f28c28; }
+.boto.vermell { background: #fde2e4; color: #9b1c2c; }
+.avis { padding: 12px; border-radius: 8px; }
+.avis.ok { background: #e6f6ec; color: #1d7a45; }
+.avis.error { background: #fde2e4; color: #9b1c2c; }
+.formulari { background: #fff; padding: 20px; border-radius: 12px; margin-top: 24px; }
+.formulari label { display: block; margin: 12px 0 4px; font-weight: bold; font-size: 14px; }
+.formulari input, .formulari select { width: 100%; padding: 10px; border: 1px solid #ccd5e0; border-radius: 6px; font-size: 15px; }
+.formulari .boto { width: 100%; margin-top: 16px; padding: 12px; }
+.detall { background: #fff; padding: 24px; border-radius: 12px; }
+.petit { font-size: 12px; color: #f28c28; font-weight: bold; }
+.peu { text-align: center; padding: 20px; font-size: 13px; color: #667; }
+@media (max-width: 600px) {
+    .llistat, .resum { grid-template-columns: 1fr; flex-direction: column; }
+    .capcalera .dreta { display: none; }
+}
+.formulari input + input { margin-top: 8px; }
